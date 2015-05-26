@@ -13,13 +13,13 @@ module JavaBuildpack::Framework
     end
 
     def compile
-      def rootPath = @droplet.root;
+      @rootPath = @droplet.root;
       system("pwd");
       system ("mkdir /home/vcap/app/");
       
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /home/vcap/app/");
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /home/vcap/app/");
-      system ("echo " + rootPath);
+      system ("echo " + @rootPath);
       
     end
 
