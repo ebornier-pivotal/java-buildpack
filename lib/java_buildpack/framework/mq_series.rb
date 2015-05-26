@@ -19,8 +19,6 @@ module JavaBuildpack::Framework
       #FileUtils.mkdir(@droplet.sandbox);
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C " + @droplet.sandbox);
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C " + @droplet.sandbox);
-      system ("echo " + @droplet.sandbox);
-      
     end
 
     def release
