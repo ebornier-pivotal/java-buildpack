@@ -1,4 +1,5 @@
 require 'java_buildpack/framework'
+require 'fileutils'
 
 module JavaBuildpack::Framework
 
