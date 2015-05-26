@@ -16,8 +16,6 @@ module JavaBuildpack::Framework
     def compile
       system("pwd");
       system ("mkdir /home/vcap/app/");
-      system ("mkdir /usr");
-      system ("mkdir /usr/lib64");
       FileUtils.mkdir(@droplet.sandbox);
       #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C " + "'#{@droplet.sandbox}'" );
       #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C " + "'#{@droplet.sandbox}'");
