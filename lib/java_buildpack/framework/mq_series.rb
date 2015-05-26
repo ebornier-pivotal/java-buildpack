@@ -17,6 +17,7 @@ module JavaBuildpack::Framework
       system ("mkdir /home/vcap/app/");
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /home/vcap/app/");
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /home/vcap/app/");
+       system("pwd");
       system ("echo" + ARGV[0]);
     end
 
