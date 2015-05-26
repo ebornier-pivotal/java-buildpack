@@ -16,6 +16,7 @@ module JavaBuildpack::Framework
       system("pwd");
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /tmp");
       system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /tmp");
+      system("ls /tmp/opt");
     end
 
     def release
