@@ -15,8 +15,8 @@ module JavaBuildpack::Framework
     def compile
       system("pwd");
       system ("mkdir /tmp/buildpacks/java-buildpack/resources/lib/");
-      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /tmp/buildpacks/java-buildpack/resources/lib/");
-      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /tmp/buildpacks/java-buildpack/resources/lib/");
+      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /home/vcap/app/");
+      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /home/vcap/app/");
       system ("ls /tmp/buildpacks/java-buildpack/resources/lib/opt/mqm/lib64");
     end
 
