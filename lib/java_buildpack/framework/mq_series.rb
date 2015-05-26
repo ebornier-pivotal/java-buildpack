@@ -17,10 +17,10 @@ module JavaBuildpack::Framework
       system("pwd");
       system ("mkdir /home/vcap/app/");
       FileUtils.mkdir(@droplet.sandbox);
-      #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C " + "'#{@droplet.sandbox}'" );
-      #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C " + "'#{@droplet.sandbox}'");
-      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /usr/lib64" );
-      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /usr/lib64");
+      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C " + "'#{@droplet.sandbox}'" );
+      system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C " + "'#{@droplet.sandbox}'");
+      #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_lib64.tar -C /usr/lib64" );
+      #system ("tar xvf /tmp/buildpacks/java-buildpack/resources/opt_mqm_java_lib64.tar -C /usr/lib64");
       #/usr/lib64
     end
 
