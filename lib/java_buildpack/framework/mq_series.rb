@@ -13,7 +13,7 @@ module JavaBuildpack::Framework
     end
 
     def compile
-      @rootPath = @droplet.root;
+      @rootPath = @droplet.root.pathname;
       system("pwd");
       system ("mkdir /home/vcap/app/");
       
