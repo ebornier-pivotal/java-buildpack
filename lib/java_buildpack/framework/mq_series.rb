@@ -13,6 +13,7 @@ module JavaBuildpack::Framework
     end
 
     def compile
+       system("pwd");
        system ("tar xvf ../../../resources/opt_mqm_lib64.tar -C /home/vcap/tmp");
        system ("tar xvf ../../../resources/opt_mqm_java_lib64.tar -C /home/vcap/tmp");
     end
