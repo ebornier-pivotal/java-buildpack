@@ -13,11 +13,15 @@ module JavaBuildpack::Framework
     end
 
     def compile
-       system("pwd");
+      system("pwd");
+      puts "step 1";
       system("ls " + ARGV[0]);
-system("ls " + ARGV[1]);
-     system ("tar xvf ../../../resources/opt_mqm_lib64.tar -C /home/vcap/tmp");
-       system ("tar xvf ../../../resources/opt_mqm_java_lib64.tar -C /home/vcap/tmp");
+        puts "step 2";
+      system("ls " + ARGV[1]);
+        puts "step 3";
+      system("ls " + ARGV[2]);
+      system ("tar xvf ../../../resources/opt_mqm_lib64.tar -C /home/vcap/tmp");
+      system ("tar xvf ../../../resources/opt_mqm_java_lib64.tar -C /home/vcap/tmp");
     end
 
     def release
